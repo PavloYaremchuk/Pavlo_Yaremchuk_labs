@@ -8,10 +8,10 @@ class Coach(Person):
         self._specialization = specialization
 
     def give_instructions(self, player: Player):
-        print(f"Coach {self._name} is giving instructions to {player._name}.")
+        print(f"Coach {self.name} is giving instructions to {player.name}.")
 
     def plan_training(self):
-        print(f"Coach {self._name} is planning a training session.")
+        print(f"Coach {self.name} is planning a training session.")
 
     def get_coach_info(self):
         return f"Experience: {self.__experience}, Specialization: {self._specialization}"

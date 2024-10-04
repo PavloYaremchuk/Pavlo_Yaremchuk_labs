@@ -1,12 +1,12 @@
 class Person:
     def __init__(self, name: str, surname: str, age: int, nationality: str):
-        self._name = name
+        self.name = name
         self._surname = surname
         self.age = age
         self.__nationality = nationality
 
     def get_info(self) -> str:
-        return f"Name: {self._name}, Surname: {self._surname}, Age: {self.age}, Nationality: {self.__nationality}"
+        return f"Name: {self.name}, Surname: {self._surname}, Age: {self.age}, Nationality: {self.__nationality}"
 
     @staticmethod
     def is_adult(age: int) -> bool:

@@ -8,11 +8,11 @@ class Player(Person):
         self.__average_points = average_points
 
     def train(self):
-        print(f"Player {self._name} is training.")
+        print(f"Player {self.name} is training.")
 
     def play_match(self, points_scored: int):
         self.average_points = (self.average_points + points_scored) / 2
-        print(f"Player {self._name} scored {points_scored} points in the match.")
+        print(f"Player {self.name} scored {points_scored} points in the match.")
 
     def get_player_info(self):
         return f"Number: {self.number}, Position: {self._position}, Average Points: {self.__average_points}"
